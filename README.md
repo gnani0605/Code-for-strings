@@ -1,4 +1,5 @@
-# Code-for-strings    
+/* Code-for-strings */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
@@ -26,8 +27,7 @@ int main() {
     int c;
     scanf("%s", s);
     scanf("%s", b);
-    c = strcmp(s, b);
-
+    c = strcmp(s, b) ;
     if (c == 0) {
         printf("%d\n", strlen(s));
         strcpy(res, s);
@@ -45,12 +45,10 @@ int main() {
         strcat(s,res);
         printf("%s\n",s);
     }
-
     if (isPalindrome(s)) {
         printf("The %s is a palindrome.\n",s);
     } else {
         printf("The %s is not a palindrome.\n",s);
     }
-
     return 0;
 }
